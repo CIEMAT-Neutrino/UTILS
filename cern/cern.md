@@ -9,9 +9,5 @@
 
 If you configured you account you should have an `/afs/cern.ch/work/U/USER_NAME/` existing folder. To monitorize your jobs you can enter in:
 
-* [Grafana](https://monit-grafana.cern.ch/dashIf you configured you account you should have an `/afs/cern.ch/work/U/USER_NAME/` existing folder. To monitorize your jobs you can enter in:
-    
-    
 * [Grafana](https://monit-grafana.cern.ch/dashboards). You need to change  your organization to *BATCH* in your Profile and in Dashboards > User Batch Jobs -> cluster: cernprod and user: USER_NAME you can check your jobs.
-![Alt text](grafana.png)boards). You need to change  your organization to *BATCH* in your Profile and in Dashboards > User Batch Jobs -> cluster: cernprod and user: USER_NAME you can check your jobs.
 ![Alt text](grafana.png)
