@@ -1,4 +1,4 @@
-* Connect to CERN computers: `ssh -C -D 10080 USUARIOCERN@lxplus.cern.ch`
+* Connect to CERN computers: `ssh -C -D 10080 USUARIOCERN@lxplus.cern.ch`. Check [here](https://indico.cern.ch/event/1206471/contributions/5157610/attachments/2555218/4403029/Bash-Python%20Intro%20Starterkit%202022.pdf) for more information.
 * Configuration and [Resources Portal](https://resources.web.cern.ch/resources/). You may need to upgrade you account as follows:
     1. List Services > E-Groups -> register with you CERN account and search for _np-comp: Linux group np-comp - Neutrino Platform_ and _np04-t0comp-users: Tier0 cores for NP04 users_.
     2. Once this is approved you can check your subscriptions at List Services > LXPLUS and Linux > Computing Groups.
@@ -11,3 +11,14 @@ If you configured you account you should have an `/afs/cern.ch/work/U/USER_NAME/
 
 * [Grafana](https://monit-grafana.cern.ch/dashboards). You need to change  your organization to *BATCH* in your Profile and in Dashboards > User Batch Jobs -> cluster: cernprod and user: USER_NAME you can check your jobs.
 ![Alt text](grafana.png)
+
+* You may need to use an specific python/ROOT version and to use them a virtual or conda enviroment are recommended. Check [here](https://abpcomputing.web.cern.ch/guides/python_inst/) for more.
+```bash
+wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+bash Miniforge3-latest-Linux-x86_64.sh
+
+conda create -n <your_env_name> python=3.6
+conda activate <your_env_name>
+conda install -c conda-forge root
+pip install -r scripts/requirements.txt
+```
