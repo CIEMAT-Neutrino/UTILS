@@ -19,6 +19,7 @@ bash Miniforge3-latest-Linux-x86_64.sh
 
 conda create -n <your_env_name> python=3.6
 conda activate <your_env_name>
-conda install -c conda-forge root
+#conda install -c conda-forge mamba
+mamba install root root_base
 pip install -r scripts/requirements.txt
 ```
