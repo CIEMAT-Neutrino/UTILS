@@ -20,6 +20,7 @@ bash Miniforge3-latest-Linux-x86_64.sh
 conda create -n <your_env_name> python=3.6
 conda activate <your_env_name>
 #conda install -c conda-forge mamba
-mamba install root root_base
-pip install -r scripts/requirements.txt
+mamba install root
+[OPTIONAL] pip install -r scripts/requirements.txt
 ```
+This is checked to work until python 3.10 and ROOT 6.28.00. (you can import ROOT from python and jupyter notebooks but root_numpy does not work)
