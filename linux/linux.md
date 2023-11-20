@@ -9,7 +9,7 @@ sudo apt install pv
 mv -v sourcedir targetdir | pv -l -s filecount > logfile
 ```
 
-- Analyze and display disk usage from terminal:
+- Analyze and display disk usage from terminal [DUC](https://duc.zevv.nl/):
 
 ```bash
 sudo apt install duc
