@@ -4,6 +4,6 @@
 
 - Add progress bar to "mv":
 
-'''bash
+```bash
 mv -v sourcedir targetdir | pv -l -s filecount > logfile
-'''
+``
