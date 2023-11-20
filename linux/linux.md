@@ -6,4 +6,4 @@
 
 ```bash
 mv -v sourcedir targetdir | pv -l -s filecount > logfile
-``
+```
