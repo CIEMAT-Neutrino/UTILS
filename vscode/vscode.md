@@ -35,3 +35,4 @@ Next, Open VS Code and press Ctrl+Shift+P to bring up the interactive menu and t
     "remote.SSH.useLocalServer": true
     }
 ```
+For the `scint_v0.0.sif` image you can work directly on the repositories by runbning `cd /home/` or open this folder with `File` options. 
