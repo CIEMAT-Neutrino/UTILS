@@ -20,7 +20,7 @@ docker run -p 8888:8888 -it myimage /bin/bash
 or
 
 ```bash
-apptainer pull docker://myrepo:v1.0
+apptainer pull docker://myusername/myrepo:v1.0
 apptainer run --home=/whatever/path/you/want myimage.sif bash
 ```
 
