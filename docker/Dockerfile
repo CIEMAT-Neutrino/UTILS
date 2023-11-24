@@ -3,7 +3,7 @@ FROM almalinux:9
 RUN dnf -y install 'dnf-command(config-manager)'
 RUN dnf config-manager --set-enabled crb && dnf -y install epel-release && dnf -y update
 # Install packages needed for ROOT
-RUN dnf -y install python3 python3-pip git root\* python3-root python3-jupyroot
+RUN dnf -y install python3 python3-pip python3-devel git root\* python3-root python3-jupyroot
 
 
 # Install python packages 
