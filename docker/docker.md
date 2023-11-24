@@ -1,8 +1,8 @@
 # BUILD IMAGE & RUN
 ```bash
-docker build -t scint .
+docker build -t myimage .
 docker images
-docker run -it scint /bin/bash
+docker run -it myimage /bin/bash
 ```
 
 # UPLOAD IMAGE
@@ -15,13 +15,13 @@ docker push myusername/myrepo:v1.0
 # DOWNLOAD IMAGE
 ```bash
 docker pull myusername/myrepo:v1.0
-docker run -p 8888:8888 -it scint /bin/bash
+docker run -p 8888:8888 -it myimage /bin/bash
 ```
 or
 
 ```bash
 apptainer pull docker://myrepo:v1.0
-apptainer run --home=/whatever/path/you/want scint_v0.0.sif bash
+apptainer run --home=/whatever/path/you/want myimage.sif bash
 ```
 
 # REMOVE IMAGE (BE CAREFUL)
