@@ -21,7 +21,7 @@ Before using CERN Condor utilities, ensure that Condor is properly installed on 
 
 ### 1. Basic Job Submission
 
-To submit a basic job to the grid, create a submission script (e.g., `submit-job.submit`) with the following content:
+To submit a basic job to the grid, create a submission script (e.g., `submit-job.sub`) with the following content:
 
 ```condor
 executable = /path/to/your/executable
@@ -35,7 +35,7 @@ queue
 Submit the job using the following command:
 
 ```bash
-condor_submit submit-job.submit
+condor_submit submit-job.sub
 ```
 
 ### 2. Advanced Job Submission
