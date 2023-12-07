@@ -2,8 +2,14 @@
 
 ## Troubleshooting
 
-```bash 
+```bash
+# Remove processes named *vscode*
 ps aux  |  grep -i vscode  |  awk '{print $2}'  |  xargs kill -9
+# Find processes related to a specific folder (e.g. .vscode-server)
+lsof | grep $HOME/.vscode-server | awk '{ print $2 }' | sort -u
+# Kill returned process ids
+kill process_id
+# Remove directory
 rm -rf $HOME/.vscode-server
 ```
 ## SSH configuration to apptainer containers
