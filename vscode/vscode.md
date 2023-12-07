@@ -12,6 +12,12 @@ kill process_id
 # Remove directory
 rm -rf $HOME/.vscode-server
 ```
+This should remove all busy processes associated to vscode and allow you to fully remove the server folder. If any processes persist, you can run:
+
+```bash
+killall -u USER
+```
+
 ## SSH configuration to apptainer containers
 In the `.ssh/config` file you need to add:
 ```bash
