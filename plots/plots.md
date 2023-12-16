@@ -1,4 +1,4 @@
-# Plotting tip and libraries
+# Plotting tips & libraries
 
 ## Style
 
